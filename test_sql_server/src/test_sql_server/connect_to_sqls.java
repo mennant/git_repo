@@ -17,7 +17,7 @@ public class connect_to_sqls {
 	                  db_userid, db_password);
 	         System.out.println("connected to db : ****************** " + db_connect_string);
 	         Statement statement = conn.createStatement();
-	         String queryString = "select * from sysobjects where type='u'";
+	         String queryString = "select * from sysobjects where type ='u'";
 	         ResultSet rs = statement.executeQuery(queryString);
 	         while (rs.next()) {
 	            System.out.println(rs.getString(1));

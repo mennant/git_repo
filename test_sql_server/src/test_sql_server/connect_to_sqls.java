@@ -15,7 +15,7 @@ public class connect_to_sqls {
 	         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 	         Connection conn = DriverManager.getConnection(db_connect_string,
 	                  db_userid, db_password);
-	         System.out.println("connected to db : ****************** " + db_connect_string);
+	         System.out.println("connected to db : ****************** ====== " + db_connect_string);
 	         Statement statement = conn.createStatement();
 	         String queryString = "select * from sysobjects where type ='u'";
 	         ResultSet rs = statement.executeQuery(queryString);
